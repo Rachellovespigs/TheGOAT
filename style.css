@@ -1,0 +1,117 @@
+body{
+    background-color: lightpink;
+}
+
+header{
+    background: url(Glitter.jpg);
+    background-size: cover;
+    height: 250px;
+    text-align: center;
+    Padding-top: 20px;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+header img{
+  width: 30%;
+  height: 20%;
+}
+
+.Titles{
+  float: left;
+  padding-top: 20px;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+video{
+    width: 27%;
+    height: 50%;
+    padding: 30px;
+    float: right;
+}
+
+.Merch img{
+    width: 27%;
+    height: 20%;
+    padding: 30px;
+    float: left;
+}
+
+.Container{
+    display: inline-block;
+}
+
+.About img{
+    width: 27%;
+    height: 20%;
+    padding: 30px;
+    float: left;
+}
+
+.ComingSoonItems{
+    display: flex;
+    padding: 10px;
+  }
+  
+  .ComingSoonItems img{
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: 0.4s ease-in;
+  }
+  
+  .ComingSoon{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: deeppink;
+    padding: 15px;
+  }
+
+  .AboutMe img{
+    width: 40%;
+    height: 100%;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: 0.4s ease-in;
+  }
+
+.Book{
+  text-align: center;
+}
+
+.Book img{
+  width: 25%;
+  height: 40%;
+  padding: 10px;
+  margin-right: 459px;
+  margin-left: 100px;
+}
+.Vids img{
+  width: 27%;
+  height: 50%;
+  padding: 30px;
+  float: right;
+}
+
+button{
+  display: inline-block;
+  width: 10%;
+  padding: 10px;
+  margin: 30px;
+  background: pink;
+  color: white;
+  font-family: cursive;
+  font-size: 30px;
+}
+
+img{
+  width: 25%;
+  height: 40%;
+}

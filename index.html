@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type ="text/css" href="style.css">
+    <script src="Game.js"></script>
+    <title>The G.O.A.T</title>
+</head>
+<body>
+<header>
+    <h1>The G.O.A.T</h1>
+</header>
+<div class="Container">
+    <div class="Vids">
+        <a href="Vid.html"><img src="Watch.jpg"></a>
+    </div>
+    <div class="Merch">
+        <a href="Merch.html"><img src="Go Now.jpg"></a>
+    </div>
+</div>
+
+<div class="About">
+    <a href="About.html"><img src="LearnMor.jpg"></a>
+</div>
+
+<img id="Book" src='Cover.jpg'>
+<button onclick="backImage()">Back</button>
+<button onclick="nextImage()">Next</button> 
+
+
+<script>
+    var imageArray = ["Cover.jpg", "Dfdf.jpg", "dzdz.jpg", "Ezi.jpg", "Ezz.jpg", "Fifi.jpg", "Fooo.jpg"]
+
+    var Book = document.querySelector("#Book")
+    var counter = 0
+
+    function backImage(){
+    counter --
+    if(counter == 0){
+        counter = 6
+    }
+    console.log(counter)
+    Book.src= imageArray[counter]
+    }
+
+    function nextImage(){
+    counter ++
+    if(counter > 6){
+        counter = 0
+    }
+    console.log(counter)
+    Book.src= imageArray[counter]
+    }
+
+</script>
+
+</body>
+</html>
