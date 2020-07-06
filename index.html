@@ -30,7 +30,7 @@
 
 
 <script>
-    var imageArray = ["Cover.jpg", "Dfdf.jpg", "dzdz.jpg", "Ezi.jpg", "Ezz.jpg", "Fifi.jpg", "Fooo.jpg"]
+    var imageArray = ["Cover.jpg", "Dfdf.jpg", "dzdz.jpg", "Ezi.jpg", "Ezz.jpg", "Fifi.jpg", "Fooo.jpg", "The G.O.A.T.jpg", "The G.O.A.T (1).jpg"]
 
     var Book = document.querySelector("#Book")
     var counter = 0
@@ -38,7 +38,7 @@
     function backImage(){
     counter --
     if(counter == 0){
-        counter = 6
+        counter = 8
     }
     console.log(counter)
     Book.src= imageArray[counter]
@@ -46,7 +46,7 @@
 
     function nextImage(){
     counter ++
-    if(counter > 6){
+    if(counter > 8){
         counter = 0
     }
     console.log(counter)
