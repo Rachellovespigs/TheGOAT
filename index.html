@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type ="text/css" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="Game.js"></script>
     <title>The G.O.A.T</title>
-</head>
-<body>
-<header>
-    <h1>The G.O.A.T</h1>
-</header>
-<div class="Container">
-    <video controls="controls" poster="LiveStream.jpg">
-        <source src="zoom_0.mp4" video="web/mp4">
-    </video>
-    <div class="Merch">
-        <a href="Merch.html"><img src="Go Now.jpg"></a>
+  </head>
+  <body>
+    <header>
+      <h1>The G.O.A.T</h1>
+    </header>
+    <div class="Container">
+      <div class="left">
+        <div class="Merch">
+          <a href="Merch.html"><img src="Go Now.jpg" /></a>
+        </div>
+        <div class="About">
+          <a href="About.html"><img src="LearnMor.jpg" /></a>
+        </div>
+      </div>
+
+      <div class="middle">
+        <img id="Book" src="Cover.jpg" />
+        <div class="buttons-container">
+          <button onclick="backImage()">Back</button>
+          <button onclick="nextImage()">Next</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <video controls="controls" poster="LiveStream.jpg">
+          <source src="zoom_0.mp4" video="web/mp4" />
+        </video>
+        <div class="Game">
+          <a href="https://scratch.mit.edu/projects/409627831/"
+            ><img src="Gaming.jpg"
+          /></a>
+        </div>
+      </div>
     </div>
-</div>
 
-<div class="About">
-    <a href="About.html"><img src="LearnMor.jpg"></a>
-</div>
+    <script>
+      var imageArray = [
+        "Cover.jpg",
+        "Dfdf.jpg",
+        "dzdz.jpg",
+        "Ezi.jpg",
+        "Ezz.jpg",
+        "Fifi.jpg",
+        "Fooo.jpg",
+        "The G.O.A.T.jpg",
+        "The G.O.A.T (1).jpg",
+      ];
 
-<img id="Book" src='Cover.jpg'>
-<button onclick="backImage()">Back</button>
-<button onclick="nextImage()">Next</button> 
+      var Book = document.querySelector("#Book");
+      var counter = 0;
 
+      function backImage() {
+        counter--;
+        if (counter == 0) {
+          counter = 8;
+        }
+        console.log(counter);
+        Book.src = imageArray[counter];
+      }
 
-<script>
-    var imageArray = ["Cover.jpg", "Dfdf.jpg", "dzdz.jpg", "Ezi.jpg", "Ezz.jpg", "Fifi.jpg", "Fooo.jpg", "The G.O.A.T.jpg", "The G.O.A.T (1).jpg"]
-
-    var Book = document.querySelector("#Book")
-    var counter = 0
-
-    function backImage(){
-    counter --
-    if(counter == 0){
-        counter = 8
-    }
-    console.log(counter)
-    Book.src= imageArray[counter]
-    }
-
-    function nextImage(){
-    counter ++
-    if(counter > 8){
-        counter = 0
-    }
-    console.log(counter)
-    Book.src= imageArray[counter]
-    }
-
-</script>
-
-</body>
+      function nextImage() {
+        counter++;
+        if (counter > 8) {
+          counter = 0;
+        }
+        console.log(counter);
+        Book.src = imageArray[counter];
+      }
+    </script>
+  </body>
 </html>
