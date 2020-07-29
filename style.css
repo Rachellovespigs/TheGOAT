@@ -26,23 +26,23 @@ header img {
 
 .left {
   float: left;
-  width: 30%;
+  width: 25%;
   height: 300px;
-  padding: 4px;
+  padding: 8px;
 }
 
 .middle {
   float: left;
   width: 40%;
   height: 300px;
-  padding: 4px;
+  padding: 8px;
 }
 
 .right {
   float: right;
   width: 25%;
   height: 300px;
-  padding: 4px;
+  padding: 8px;
 }
 
 .Merch {
